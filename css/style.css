@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  /* src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf"); */
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf");
+  src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+  src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-grey-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  /* border-bottom: 1px solid gray; */
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: stretch;
+}
+
+.result {
+  width: 225px;
+  background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  color: var(--white);
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 30px;
+}
+
+.result h1{
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 70%;
+}
+
+.result .score {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(var(--violet-blue), var(--persian-blue ));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .score h2 {
+  font-size: 3rem;
+}
+
+.result .score span {
+  opacity: 60%;
+}
+
+.result .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result .description h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.result .description p {
+  text-align: center;
+  opacity: 80%;
+}
+
+
+.attribution {
+  font-size: 11px; text-align: center;
+  padding: 10px 0;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop */
+@media (max-width: 1440px) {
+
+}
+
+
+/* Mobile */
+@media (max-width: 375px) {
+  
+}
