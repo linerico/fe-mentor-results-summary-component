@@ -44,16 +44,21 @@ body {
   align-items: center;
 }
 
-.card {
+.container > .card {
   display: flex;
   align-items: stretch;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .result {
   width: 225px;
-  background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
   color: var(--white);
-  padding: 50px 50px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,17 +66,18 @@ body {
   gap: 30px;
 }
 
-.result h1{
+.result span {
   font-size: 1.25rem;
   text-align: center;
   opacity: 70%;
+  font-weight: 100;
 }
 
 .result .score {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: linear-gradient(var(--violet-blue), var(--persian-blue ));
+  background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,23 +109,94 @@ body {
   opacity: 80%;
 }
 
+.summary {
+  width: 275px;
+  /* border: 1px solid blue; */
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.summary .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.summary .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary .detail > .card {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.summary .detail .detail-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.summary .detail .detail-score {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.summary .detail .detail-score span {
+  color: black;
+  font-weight: 700;
+}
+
+.reaction {
+  color: var(--light-red);
+  background-color: hsl(0, 90%, 98%);
+  /* background-color: hsl(var(--light-red), 100%, 80%); */
+}
+
+.memory {
+  color: var(--orange-yellow);
+  background-color: hsl(39, 90%, 98%);
+}
+
+.verbal {
+  color: var(--green-teal);
+  background-color: hsl(166, 90%, 98%);
+}
+
+.visual {
+  color: var(--cobalt-blue);
+  background-color: hsl(234, 90%, 98%);
+}
+
+.summary .action {
+  background-color: var(--dark-grey-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  height: 40px;
+}
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
   padding: 10px 0;
 }
 
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /* Desktop */
 @media (max-width: 1440px) {
-
 }
-
 
 /* Mobile */
 @media (max-width: 375px) {
-  
 }
